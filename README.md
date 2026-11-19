@@ -54,3 +54,4 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 ## Changelog
 
 - 2026-11-19: pilot. 1 listed, 4 in human review, 3 dev-excluded, 6 not-candidates.
+- 2026-11-19: owner lead (Sh4de0 Frameless Portals thread). 2 listed (V2_Ultrakill_, _potatobag), 2 not-candidates (the mod author and a pro-AI reply). 3 listed total.
