@@ -40,10 +40,7 @@ Wrongly listed? Open a GitHub issue titled `appeal: @handle` with either:
 - evidence you write software professionally (a GitHub, a company page, a repo), or
 - the post we cited, in context, read as something other than a non-dev complaint.
 
-Removals land in the next commit and in the changelog below. We would rather have an empty list than a wrong one.
-
-## Method (short version)
-
+Verdict values in `evidence.jsonl`: `listed` (on the list), `review` (awaiting the owner's call; used for boundary classes and for accounts whose post text needs thread context to show predicate A), `dev-excluded` (developer evidence found), `not-candidate` (fails a predicate), `not-listed` (passed the predicates but the owner declined listing after review).
 1. Candidates come from reply/quote harvests around AI-in-dev posts and from logged-in X keyword searches (dev-context phrases: "vibe coding" + "technical debt", "AI slop" + "codebase", etc.). No paid API use.
 2. Each candidate gets a pass-A check (is the complaint about AI *in software development*?) from the post text.
 3. Pass-B checks for developer evidence: bio/display name regex, then bio links, then the linked website scraped for a GitHub, then exact-username GitHub probes. Any solid dev evidence excludes the account.
@@ -57,3 +54,4 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 - 2026-11-19: owner lead (Sh4de0 Frameless Portals thread). 2 listed (V2_Ultrakill_, _potatobag), 2 not-candidates (the mod author and a pro-AI reply). 3 listed total.
 - 2026-11-20: owner verdict: 4 review accounts not listed (GuptaBioDD, ZidaneZ08902030, moonseesyou, GaryMarcus).
 - 2026-11-20: harvest of two owner posts (read-the-code, luddite-fatigue) + meowajor lead. 11 listed, 7 review, 1 dev-excluded, 1 not-candidate. 14 listed total.
+- 2026-11-20: diff-review corrections. 8 listed accounts downgraded (6 to review: post text needs thread context or shows a practitioner signal; 2 to not-candidate); postUrl added to every record; CSV rewritten with LF endings. 6 listed total.
