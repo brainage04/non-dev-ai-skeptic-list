@@ -55,3 +55,5 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 
 - 2026-11-19: pilot. 1 listed, 4 in human review, 3 dev-excluded, 6 not-candidates.
 - 2026-11-19: owner lead (Sh4de0 Frameless Portals thread). 2 listed (V2_Ultrakill_, _potatobag), 2 not-candidates (the mod author and a pro-AI reply). 3 listed total.
+- 2026-11-20: owner verdict: 4 review accounts not listed (GuptaBioDD, ZidaneZ08902030, moonseesyou, GaryMarcus).
+- 2026-11-20: harvest of two owner posts (read-the-code, luddite-fatigue) + meowajor lead. 11 listed, 7 review, 1 dev-excluded, 1 not-candidate. 14 listed total.
