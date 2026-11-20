@@ -8,8 +8,8 @@ Sparked by [this post](https://x.com/brainage19/status/2122988819222048802) (18 
 
 An account is listed only when **both** predicates hold, and every entry carries its evidence:
 
-1. **Predicate A - complains about AI in a software-development context.** Not AI art. Not general AI doom. The complaint has to target AI-assisted or AI-generated *code* (vibe coding, Copilot-style tooling, AI code review, "AI is replacing software engineers", etc.).
-2. **Predicate B - is not a software developer.** No evidence of writing software professionally or as a serious pursuit: no software/engineering job in bio or display name, no GitHub on X profile or personal site, no practitioner voice ("my PR", "our codebase"). Practitioners complaining about AI tooling are *excluded* - they have skin in the game.
+1. **Predicate A – complains about AI in a software-development context.** Not AI art. Not general AI doom. The complaint has to target AI-assisted or AI-generated *code* (vibe coding, Copilot-style tooling, AI code review, "AI is replacing software engineers", etc.).
+2. **Predicate B – is not a software developer.** No evidence of writing software professionally or as a serious pursuit: no software/engineering job in bio or display name, no GitHub on X profile or personal site, no practitioner voice ("my PR", "our codebase"). Practitioners complaining about AI tooling are *excluded* - they have skin in the game.
 
 Excluded by design: software engineers, CS students, founders who build, QA, data scientists, and anyone whose complaint is practitioner frustration rather than outsider sneering. Boundary classes (researchers, engineering managers, ex-devs) go to human review, not the list.
 
@@ -19,7 +19,7 @@ Every account in `blocklist.csv` has a matching line in `evidence.jsonl` with th
 
 | File | What it is |
 |---|---|
-| `blocklist.csv` | `username,display_name,evidence_post` - one row per listed account |
+| `blocklist.csv` | `username,display_name,evidence_post` – one row per listed account |
 | `evidence.jsonl` | Full decision record for every account reviewed, listed or not |
 | `README.md` | This document: criteria, method, appeals |
 
@@ -44,7 +44,7 @@ Removals land in the next commit and in the changelog below. We would rather hav
 
 ## Method (short version)
 
-Verdict values in `evidence.jsonl`: `listed` (on the list), `review` (awaiting the owner's call; used for boundary classes and for accounts whose post text needs thread context to show predicate A; carries a `reviewReason` saying what the owner is deciding), `dev-excluded` (developer evidence found), `not-candidate` (fails a predicate), `not-listed` (passed the predicates but the owner declined listing after review).
+Verdict values in `evidence.jsonl`: `listed` (on the list), `review` (awaiting the owner's call; used for boundary classes and for accounts whose post text needs thread context to show predicate A; carries a `reviewReason` saying what the owner is deciding), `dev-excluded` (developer evidence found), `not-candidate` (fails a predicate), `not-listed` (passed the predicates but the owner declined listing after review). `predicateA` records whether the post text alone carries predicate A; false means the complaint needs thread context, which `reviewReason` names. `github` records the exact-username GitHub probe result, with corroboration notes when a match was found.
 
 1. Candidates come from reply/quote harvests around AI-in-dev posts and from logged-in X keyword searches (dev-context phrases: "vibe coding" + "technical debt", "AI slop" + "codebase", etc.). No paid API use.
 2. Each candidate gets a pass-A check (is the complaint about AI *in software development*?) from the post text.
@@ -61,3 +61,4 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 - 2026-11-20: harvest of two owner posts (read-the-code, luddite-fatigue) + meowajor lead. 11 listed, 7 review, 1 dev-excluded, 1 not-candidate. 14 listed total.
 - 2026-11-20: diff-review corrections. 8 listed accounts downgraded (7 to review: post text needs thread context or shows a practitioner signal; 1 to not-candidate), 4 review accounts to not-candidate; postUrl added to every record; CSV rewritten with LF endings. 6 listed total.
 - 2026-11-20: re-review corrections. taiping_rebel moved to review (same no-AI-in-text shape as the others); _potatobag predicate fields aligned; note cleanup. 5 listed total.
+- 2026-11-20: third and fourth review rounds. predicateA aligned on seven review records; GitHub exact-username probes recorded for every account (nullDorito's corroborated match moved it to review); notes deduplicated; dash sweep. 4 listed total.
