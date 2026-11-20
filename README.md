@@ -9,7 +9,7 @@ Sparked by [this post](https://x.com/brainage19/status/2122988819222048802) (18 
 An account is listed only when **both** predicates hold, and every entry carries its evidence:
 
 1. **Predicate A – complains about AI in a software-development context.** Not AI art. Not general AI doom. The complaint has to target AI-assisted or AI-generated *code* (vibe coding, Copilot-style tooling, AI code review, "AI is replacing software engineers", etc.).
-2. **Predicate B – is not a software developer.** No evidence of writing software professionally or as a serious pursuit: no software/engineering job in bio or display name, no GitHub on X profile or personal site, no practitioner voice ("my PR", "our codebase"). Practitioners complaining about AI tooling are *excluded* - they have skin in the game.
+2. **Predicate B – is not a software developer.** No evidence of writing software professionally or as a serious pursuit: no software/engineering job in bio or display name, no GitHub on X profile or personal site, no practitioner voice ("my PR", "our codebase"). Practitioners complaining about AI tooling are *excluded* – they have skin in the game.
 
 Excluded by design: software engineers, CS students, founders who build, QA, data scientists, and anyone whose complaint is practitioner frustration rather than outsider sneering. Boundary classes (researchers, engineering managers, ex-devs) go to human review, not the list.
 
