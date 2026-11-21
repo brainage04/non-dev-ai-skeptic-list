@@ -64,3 +64,4 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 - 2026-11-20: third and fourth review rounds. predicateA aligned on seven review records; GitHub exact-username probes recorded for every account (nullDorito's corroborated match moved it to review); notes deduplicated; dash sweep. 4 listed total.
 - 2026-11-20: fifth review round. nullDorito corroboration now cites in-record data (displayName field added). betizzel and volzhukbnyy GitHub matches annotated. predicateA sentence scoped. 4 listed total.
 - 2026-11-20: sixth review round. predicateA doc wording corrected, nullDorito record deduplicated, displayName documented. 4 listed total.
+- 2026-11-21: owner lead (Leave_MeBee thread, 53 posts). 0 listed. The OP is dev-excluded (her bio links her own game on Steam). 3 to review (TheslimeA, Fewixofficial, Anime_Dingo), 1 not-candidate. 4 listed total.
