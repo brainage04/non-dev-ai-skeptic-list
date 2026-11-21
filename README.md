@@ -44,12 +44,14 @@ Removals land in the next commit and in the changelog below. We would rather hav
 
 ## Method (short version)
 
-Verdict values in `evidence.jsonl`: `listed` (on the list), `review` (awaiting the owner's call; used for boundary classes and for accounts whose post text needs thread context to show predicate A; carries a `reviewReason` saying what the owner is deciding), `dev-excluded` (developer evidence found), `not-candidate` (fails a predicate), `not-listed` (passed the predicates but the owner declined listing after review). `predicateA` records whether the post text alone carries predicate A. For a `review` record, false means the complaint needs thread context, which `reviewReason` names. A `not-candidate` record with false has no complaint about AI in software development in the text. `github` records the exact-username GitHub probe result, with corroboration notes when a match was found. `displayName` records the X display name when a GitHub match is corroborated by it.
+Verdict values in `evidence.jsonl`: `listed` (on the list), `review` (awaiting the owner's call; used for boundary classes and for accounts whose post text needs thread context to show predicate A; carries a `reviewReason` saying what the owner is deciding), `dev-excluded` (developer evidence found), `not-candidate` (fails a predicate), `not-listed` (passed the predicates but the owner declined listing after review). `predicateA` records whether the post text alone carries predicate A. For a `review` record, false means the complaint needs thread context, which `reviewReason` names. A `not-candidate` record with false has no complaint about AI in software development in the text. A `listed` record with false was listed by the owner on thread context. `ownerVerdict` records the owner's decision, date and reason for every account he reviewed. `github` records the exact-username GitHub probe result, with corroboration notes when a match was found. `displayName` records the X display name when a GitHub match is corroborated by it.
 
 1. Candidates come from reply/quote harvests around AI-in-dev posts and from logged-in X keyword searches (dev-context phrases: "vibe coding" + "technical debt", "AI slop" + "codebase", etc.). No paid API use.
 2. Each candidate gets a pass-A check (is the complaint about AI *in software development*?) from the post text.
 3. Pass-B checks for developer evidence: bio/display name regex, then bio links, then the linked website scraped for a GitHub, then exact-username GitHub probes. Any solid dev evidence excludes the account.
 4. Remaining accounts get a human read. Nobody lands on the list from automation alone.
+
+Slang counts as naming AI coding: "cuck coding" and "cuckcoded" mean vibe coding. A non-developer who talks about it with authority meets predicate A.
 
 The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 
@@ -65,3 +67,4 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 - 2026-11-20: fifth review round. nullDorito corroboration now cites in-record data (displayName field added). betizzel and volzhukbnyy GitHub matches annotated. predicateA sentence scoped. 4 listed total.
 - 2026-11-20: sixth review round. predicateA doc wording corrected, nullDorito record deduplicated, displayName documented. 4 listed total.
 - 2026-11-21: owner lead (Leave_MeBee thread, 53 posts). 0 listed. The OP is dev-excluded (her bio links her own game on Steam). 3 to review (TheslimeA, Fewixofficial, Anime_Dingo), 1 not-candidate. 4 listed total.
+- 2026-11-21: owner verdicts on the review queue. 8 listed (nullDorito, KingPootPoot, blehipede, Dandy_Kaiju, QueenCodaDev, taiping_rebel, TFS_Rogue, TheslimeA), 2 not-listed (Zocklukas, vertexcubed_), 3 not-candidate (tamagochi_game, WackyMatthew91, Animencyclo). 12 listed total.
