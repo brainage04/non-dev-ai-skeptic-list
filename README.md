@@ -50,6 +50,7 @@ Verdict values in `evidence.jsonl`: `listed` (on the list), `review` (awaiting t
 2. Each candidate gets a pass-A check (is the complaint about AI *in software development*?) from the post text.
 3. Pass-B checks for developer evidence: bio/display name regex, then bio links, then the linked website scraped for a GitHub, then exact-username GitHub probes. Any solid dev evidence excludes the account.
 4. Remaining accounts get a human read. Nobody lands on the list from automation alone.
+5. Every listed account gets a background check: a helper searches GitHub, GitLab, Codeberg, Modrinth, CurseForge, itch.io, Game Jolt, Steam, npm, PyPI and the bio's links for developer evidence, and reads the account's recent posts. It collects developer evidence only, nothing personal. A match on another site counts only when something links it back to the X account. `backgroundCheck` records the date, the helper's recommendation, the decision and a one-line summary.
 
 Slang counts as naming AI coding: "cuck coding" and "cuckcoded" mean vibe coding. A non-developer who talks about it with authority meets predicate A.
 
@@ -69,3 +70,4 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 - 2026-11-21: owner lead (Leave_MeBee thread, 53 posts). 0 listed. The OP is dev-excluded (her bio links her own game on Steam). 3 to review (TheslimeA, Fewixofficial, Anime_Dingo), 1 not-candidate. 4 listed total.
 - 2026-11-21: owner verdicts on the review queue. 8 listed (nullDorito, KingPootPoot, blehipede, Dandy_Kaiju, QueenCodaDev, taiping_rebel, TFS_Rogue, TheslimeA), 2 not-listed (Zocklukas, vertexcubed_), 3 not-candidate (tamagochi_game, WackyMatthew91, Animencyclo). 12 listed total.
 - 2026-11-22: owner verdicts. Fewixofficial and Anime_Dingo not listed. Review queue empty. 12 listed total.
+- 2026-11-22: background checks on all 12 listed accounts. QueenCodaDev and taiping_rebel removed for developer evidence. 10 listed total.
