@@ -68,3 +68,4 @@ The full run log for the pilot harvest (18-19 Nov 2026) is in `evidence.jsonl`.
 - 2026-11-20: sixth review round. predicateA doc wording corrected, nullDorito record deduplicated, displayName documented. 4 listed total.
 - 2026-11-21: owner lead (Leave_MeBee thread, 53 posts). 0 listed. The OP is dev-excluded (her bio links her own game on Steam). 3 to review (TheslimeA, Fewixofficial, Anime_Dingo), 1 not-candidate. 4 listed total.
 - 2026-11-21: owner verdicts on the review queue. 8 listed (nullDorito, KingPootPoot, blehipede, Dandy_Kaiju, QueenCodaDev, taiping_rebel, TFS_Rogue, TheslimeA), 2 not-listed (Zocklukas, vertexcubed_), 3 not-candidate (tamagochi_game, WackyMatthew91, Animencyclo). 12 listed total.
+- 2026-11-22: owner verdicts. Fewixofficial and Anime_Dingo not listed. Review queue empty. 12 listed total.
